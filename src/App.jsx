@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { InputBox } from "./components";
 import useCurrencyInfo from "./hooks/useCurrencyInfo";
+import BackgroundImage from "./assets/b.jpg";
 
 function App() {
   const [amount, setAmount] = useState(0);
@@ -23,8 +24,8 @@ function App() {
     setConvertedAmount(amount * currencyInfo[to]);
   };
 
-  const BackgroundImage =
-    "https://img.freepik.com/free-vector/gradient-cryptocurrency-concept_23-2149215736.jpg?w=1800&t=st=1716469731~exp=1716470331~hmac=4fb1d931940babe85bd9daf42d05ed75eea875c6f5eec21cee9573c7fa25aea9";
+  // const BackgroundImage =
+  //   "https://img.freepik.com/free-vector/gradient-cryptocurrency-concept_23-2149215736.jpg?w=1800&t=st=1716469731~exp=1716470331~hmac=4fb1d931940babe85bd9daf42d05ed75eea875c6f5eec21cee9573c7fa25aea9";
 
   return (
     <div
@@ -35,7 +36,7 @@ function App() {
     >
       <div className="w-full ">
         <h1 className="text-5xl text-white flex justify-center mb-10 font-mono">
-        Currency Converter
+          Currency Converter
         </h1>
         <div className="w-full max-w-md mx-auto border border-gray-60 rounded-lg p-5 backdrop-blur-sm bg-white/30">
           <form
